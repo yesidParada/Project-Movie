@@ -9,7 +9,6 @@
         <MovieList title="Top Mejores Películas" :dataList="topMovies" />
       </v-col>
     </v-row>
-    <Footer />
   </div>
 </template>
 <script>

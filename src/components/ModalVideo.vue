@@ -45,7 +45,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style>
 .videoSection {
   width: 100%;
   height: calc(100vh - 60px);

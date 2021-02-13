@@ -5,7 +5,6 @@
       :data="newMovies"
       extencion="now_playing"
     />
-    <Footer />
   </div>
 </template>
 <script>

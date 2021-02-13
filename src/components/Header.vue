@@ -18,6 +18,7 @@
     </v-toolbar-items>
     <v-spacer></v-spacer>
     <v-text-field
+      v-if="enabledInput"
       label="Buscar"
       outlined
       append-icon="mdi-magnify"
@@ -37,7 +38,8 @@ export default {
   data() {
     return {
       Logo,
-      search: ""
+      search: "",
+      enabledInput: false
     };
   },
   methods: {
@@ -52,6 +54,11 @@ export default {
           page: 1
         });
       }
+    }
+  },
+  watch: {
+    $route(to) {
+      this.enabledInput = to.path !== "/Search" ? true : false;
     }
   }
 };

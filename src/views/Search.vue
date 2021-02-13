@@ -17,8 +17,12 @@
         ></v-text-field>
       </v-col>
     </v-row>
-    <MovieCatalog :extencion="search" :data="searchData" search />
-    <Footer />
+    <MovieCatalog
+      v-if="searchData"
+      :extencion="search"
+      :data="searchData"
+      search
+    />
   </div>
 </template>
 <script>

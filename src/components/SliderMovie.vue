@@ -47,7 +47,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style>
 .v-image__image--cover {
   background-position: center top !important;
 }

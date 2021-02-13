@@ -49,7 +49,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style>
 .movieDetailView {
   height: calc(100vh - 64px);
   background-repeat: no-repeat;
@@ -62,5 +62,10 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+@media (max-width: 960px) {
+  .movieDetailView {
+    height: auto;
+  }
 }
 </style>

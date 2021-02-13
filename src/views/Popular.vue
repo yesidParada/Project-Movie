@@ -5,7 +5,6 @@
       :data="popularMovies"
       extencion="popular"
     />
-    <Footer />
   </div>
 </template>
 <script>

@@ -17,7 +17,7 @@
           length="10"
           half-increments
           small
-          disabled="true"
+          :disabled="true"
         ></v-rating>
       </v-card-subtitle>
       <v-card-subtitle>Generos</v-card-subtitle>

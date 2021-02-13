@@ -1,9 +1,10 @@
 <template>
   <v-app>
     <Header />
-    <v-content>
+    <v-main>
       <router-view />
-    </v-content>
+    </v-main>
+    <Footer v-if="enabledInput" />
   </v-app>
 </template>
 
@@ -17,8 +18,15 @@ export default {
     Header
   },
 
-  data: () => ({
-    //
-  })
+  data() {
+    return {
+      enabledInput: false
+    };
+  },
+  watch: {
+    $route(to) {
+      this.enabledInput = to.path !== "/Movie" ? true : false;
+    }
+  }
 };
 </script>

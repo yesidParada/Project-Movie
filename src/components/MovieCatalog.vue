@@ -83,7 +83,6 @@ export default {
   methods: {
     ...mapActions(["getData", "getSearchData"]),
     setPagination() {
-      console.log(this.search);
       if (this.search) {
         this.getSearchData({
           extencion: this.extencion,
