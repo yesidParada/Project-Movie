@@ -6,6 +6,7 @@ import Search from "../views/Search.vue";
 import Popular from "../views/Popular.vue";
 import NewMovie from "../views/NewMovie.vue";
 import MovieDetail from "../views/MovieDetail.vue";
+import About from "../views/About.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,12 @@ const routes = [
     name: "NewMovie",
     component: NewMovie,
     meta: { title: "New Movie" }
+  },
+  {
+    path: "/About",
+    name: "About",
+    component: About,
+    meta: { title: "Somos" }
   },
   {
     path: "/Movie/:id",

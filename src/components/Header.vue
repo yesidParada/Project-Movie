@@ -16,6 +16,9 @@
     <v-toolbar-items>
       <v-btn text to="/Search">Buscar</v-btn>
     </v-toolbar-items>
+    <v-toolbar-items>
+      <v-btn text to="/About">Sobre nosotros</v-btn>
+    </v-toolbar-items>
     <v-spacer></v-spacer>
     <v-text-field
       v-if="enabledInput"
